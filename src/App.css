@@ -1,0 +1,135 @@
+#root {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #f7f7f7;
+  width: 200vw;
+  height: 90vh;
+}
+
+.cabçalho{
+  display: flex;
+  width: 100%;
+  grid-template-columns: 1fr auto;
+  justify-content: space-around;
+}
+
+.inicio{
+  background-color: transparent;
+  color: #747474;
+  font-size: 15px;
+  font-weight: 500;
+  border: none;
+  padding: 8px 16px;
+  border: none;
+}
+
+.inicio:focus{
+  box-shadow: none;
+  outline: none;
+}
+
+.titulo{
+  display: block;
+  color:#f6af03;
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 3px;
+}
+
+.subtitulo{
+  display: block;
+  text-align: center;
+  color: #747474;
+  font-weight: 500;
+  margin-bottom: 40px;
+  font-size: 15px;
+}
+
+#auto{
+  color: #f6af03;
+  font-weight: 750;
+  font-size: 22px;
+  text-align: left;
+  margin-left: 80px
+}
+
+#matize{
+  color: black;
+  font-weight: 750;
+  font-size: 22px;
+  text-align: left;
+}
+
+.container{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.formulario{
+  background-color: white;
+  width: 650px;
+  height: 420px;
+  border-radius: 10px 0px 0px 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 30px;
+}
+
+.detalhe{
+  width: 400px;
+  height: 480px;
+  background: linear-gradient(135deg, #011b2b 48%, #045b90 100%);
+  background-attachment: fixed;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.tituloInput{
+  color: #989898;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+input{
+  background-color: white;
+  border-left: 0;
+  border-top: 0;
+  border-right: 0;
+  border-color: #c2c2c2;
+  width: 280px;
+  color: #012e4b;
+}
+
+input:focus{
+  background-color: white;
+  outline:none;
+}
+
+.botaoEntrar{
+  width: 300px;
+  border-radius: 5px;
+  background-color: transparent;
+  color: #012e4b;
+  border: none;
+}
+
+.botaoEntrar:focus{
+  outline:0;
+  box-shadow: none;
+}
+
+.botaoCriar{
+  width: 190px;
+  border-radius: 5px;
+  margin-left: 50px;
+  background-color: #012e4b;
+  border: none;
+}
+
+.botaoCriar:focus{
+  outline:0;
+  box-shadow: none;
+}

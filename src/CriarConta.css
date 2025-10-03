@@ -7,7 +7,7 @@
   height: 90vh;
 }
 
-.cabçalho{
+.cabeçalho{
   display: flex;
   width: 100%;
   grid-template-columns: 1fr auto;

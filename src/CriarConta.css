@@ -7,28 +7,7 @@
   height: 90vh;
 }
 
-.cabeçalho{
-  display: flex;
-  width: 100%;
-  grid-template-columns: 1fr auto;
-  justify-content: space-around;
-}
-
-.inicio{
-  background-color: transparent;
-  color: #747474;
-  font-size: 15px;
-  font-weight: 500;
-  border: none;
-  padding: 8px 16px;
-  border: none;
-}
-
-.inicio:focus{
-  box-shadow: none;
-  outline: none;
-}
-
+/* criar conta */
 .titulo{
   display: block;
   color:#f6af03;
@@ -38,6 +17,7 @@
   margin-bottom: 3px;
 }
 
+/*Ainda não tem uma conta? Crie e tenha acesso a todos os recursos*/
 .subtitulo{
   display: block;
   text-align: center;
@@ -47,20 +27,7 @@
   font-size: 15px;
 }
 
-#auto{
-  color: #f6af03;
-  font-weight: 750;
-  font-size: 22px;
-  text-align: left;
-  margin-left: 80px
-}
 
-#matize{
-  color: black;
-  font-weight: 750;
-  font-size: 22px;
-  text-align: left;
-}
 
 .container{
   display:flex;
@@ -79,6 +46,7 @@
   padding: 30px;
 }
 
+/* quadrado azul*/
 .detalhe{
   width: 400px;
   height: 480px;
@@ -108,28 +76,105 @@ input:focus{
   outline:none;
 }
 
-.botaoEntrar{
-  width: 300px;
-  border-radius: 5px;
+/*cabeçalho (automatize, incio, perfil)*/
+#auto{
+  color: #f6af03;
+  font-weight: 750;
+  font-size: 22px;
+  text-align: left;
+  margin-left: 80px
+}
+
+#matize{
+  color: black;
+  font-weight: 750;
+  font-size: 22px;
+  text-align: left;
+}
+
+.navbar {
+  width: 100%;
+}
+
+.navbar .container-fluid {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  margin-right: 80px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.menu-direito {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-link-custom {
+  color: #747474 !important;
+  font-weight: 500;
+  font-size: 15px;
+  text-decoration: none;
+  gap: 30x;
+}
+
+.nav-link-custom:hover {
+  color: #f6af03 !important;
+}
+
+.perfil-icone {
+  color: #747474;
+  font-size: 1.5rem;
+  vertical-align: middle;
+}
+
+.perfil-icone:hover {
+  color: #f6af03;
+}
+
+/*customização botoes entrar e criar*/
+
+.botoes-container {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.botaoEntrar {
   background-color: transparent;
   color: #012e4b;
+  font-weight: 500;
+  padding: 10px 20px;
+  margin-left: 13px;
   border: none;
+}
+
+.botaoEntrar:hover {
+  background-color: rgba(1, 43, 75, 0.1);
+  color: #012e4b;
 }
 
 .botaoEntrar:focus{
-  outline:0;
+  outline: 0;
   box-shadow: none;
 }
 
-.botaoCriar{
-  width: 190px;
-  border-radius: 5px;
-  margin-left: 50px;
+.botaoCriar {
   background-color: #012e4b;
   border: none;
+  font-weight: 500;
+  padding: 10px 40px;
+  margin-right: 90px;
 }
 
-.botaoCriar:focus{
-  outline:0;
+.botaoCriar:hover {
+  outline: 0;
   box-shadow: none;
+  background-color: #011b2b;
 }

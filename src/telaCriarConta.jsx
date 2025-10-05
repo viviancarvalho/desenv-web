@@ -1,6 +1,7 @@
 import { useState } from 'react';
-import './App.css';
+import './CriarConta.css';
 import Button from 'react-bootstrap/Button';
+import CabeçalhoBásico from '../components/CabeçalhoBásico';
 
 function App() {
 
@@ -8,10 +9,7 @@ function App() {
     <>
       <div className="fundoPrincipal">
 
-        <div className="cabeçalho">
-          <label id="auto">Auto<span id="matize">matize</span></label>
-          <Button className="inicio">Início</Button>
-        </div>
+        <CabeçalhoBásico />
         
         <h1 className="titulo">Criar conta</h1>
         <p className="subtitulo">Ainda não tem uma conta? Crie e tenha acesso a todos os recursos</p>
@@ -59,9 +57,10 @@ function App() {
             <input type="password"></input>
           </div>
 
-        <Button className="botaoEntrar">Já tem uma conta? Clique aqui</Button>
-
-        <Button className="botaoCriar">Criar conta</Button>
+          <div className="botoes-container">
+            <Button className="botaoEntrar">Já tem uma conta? Clique aqui</Button>
+            <Button className="botaoCriar">Criar conta</Button>
+          </div>
 
         </div>
 
@@ -75,5 +74,7 @@ function App() {
     </>
   )
 }
+
+
 
 export default App

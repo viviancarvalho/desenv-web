@@ -1,0 +1,85 @@
+
+.navbar {
+  width: 100%;
+}
+
+.navbar .container-fluid {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  margin-right: 80px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.menu-direito {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-link-custom {
+  color: #747474 !important;
+  font-weight: 500;
+  font-size: 15px;
+  text-decoration: none;
+  gap: 30x;
+}
+
+.nav-link-custom:hover {
+  color: #f6af03 !important;
+}
+
+.perfil-icone {
+  color: #747474;
+  font-size: 1.5rem;
+  vertical-align: middle;
+}
+
+.perfil-icone:hover {
+  color: #f6af03;
+}
+
+.container{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.formulario{
+  background-color: white;
+  width: 650px;
+  height: 420px;
+  border-radius: 10px 0px 0px 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 30px;
+}
+
+.detalhe{
+  width: 400px;
+  height: 480px;
+  background: linear-gradient(135deg, #011b2b 48%, #045b90 100%);
+  background-attachment: fixed;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.tituloCampo{
+  color: #989898;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.conteudoCampo{
+  background-color: white;
+  border-left: 0;
+  border-top: 0;
+  border-right: 0;
+  border-color: #c2c2c2;
+  width: 280px;
+  color: #012e4b;
+}

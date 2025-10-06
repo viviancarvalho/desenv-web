@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './CriarConta.css';
 import Button from 'react-bootstrap/Button';
-import CabeçalhoBásico from '../components/CabeçalhoBásico';
+import CabeçalhoBásico from '../src/components/CabeçalhoBásico';
 
 function App() {
 

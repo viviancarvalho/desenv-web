@@ -1,6 +1,6 @@
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import { useState } from 'react';
-import '../src/CriarConta.css';
+import '../CriarConta.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
 

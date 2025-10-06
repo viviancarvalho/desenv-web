@@ -4,7 +4,7 @@ import '../telaAnalise.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
 
-function CabeçalhoFuncionário() {
+function CabeçalhoFuncionario() {
   return (
     <>
         <Navbar bg="transparent" expand={false} className="px-5 shadow-sm">
@@ -29,4 +29,4 @@ function CabeçalhoFuncionário() {
   );
 }
 
-export default CabeçalhoFuncionário;
+export default CabeçalhoFuncionario;

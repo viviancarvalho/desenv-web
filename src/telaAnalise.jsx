@@ -1,13 +1,13 @@
 import './telaAnalise.css';
 import Button from 'react-bootstrap/Button';
-import CabeçalhoFuncionário from './components/CabeçalhoFuncionário';
+import CabeçalhoFuncionario from './components/CabeçalhoFuncionario';
 import CampoInfo from './components/CampoInfo'
 
 function telaAnalise() {
     return(
         <>
          <div className="fundoPrincipal">
-                <CabeçalhoFuncionário />
+                <CabeçalhoFuncionario />
 
                <div className="container">
                     <div className="formulario">
@@ -26,6 +26,10 @@ function telaAnalise() {
                             conteudo="Declaração para aluno"
                         ></CampoInfo>
 
+                        <div className="botoesContainer">
+                            <Button href="reprovado" classname="botaoRecusar">Recusar</Button>
+                            <Button href="historico" className="botaoAprovar">Aprovar</Button>
+                        </div>
 
                     </div>
 

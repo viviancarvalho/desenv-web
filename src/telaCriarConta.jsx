@@ -58,7 +58,7 @@ function App() {
           </div>
 
           <div className="botoes-container">
-            <Button className="botaoEntrar">Já tem uma conta? Clique aqui</Button>
+            <Button href="login" className="botaoEntrar">Já tem uma conta? Clique aqui</Button>
             <Button className="botaoCriar">Criar conta</Button>
           </div>
 

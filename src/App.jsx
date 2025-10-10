@@ -1,13 +1,17 @@
 import "bootstrap/dist/css/bootstrap.min.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./TelaPerfil.css";
 import TelaPerfil from "./TelaPerfil";
 import './telaAnalise.css';
-import telaAnalise from "./telaAnalise";
+import TelaAnalise from "./telaAnalise";
 
 function App() {
 	return (
 		<>
-        <telaAnalise></telaAnalise>
+			<Routes>
+				<Route path="/" element={<TelaAnalise />} />
+				<Route path="/perfil" element={<TelaPerfil></TelaPerfil>} />
+			</Routes>
 
 		</>
 	);

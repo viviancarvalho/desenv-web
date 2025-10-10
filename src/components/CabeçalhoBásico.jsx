@@ -2,6 +2,7 @@ import { Navbar, Nav, Container } from 'react-bootstrap';
 import { useState } from 'react';
 import '../CriarConta.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
+import { Link } from "react-router-dom";
 
 
 function CabeçalhoBásico() {
@@ -17,7 +18,7 @@ function CabeçalhoBásico() {
 
             <div className="menu-direito d-flex align-items-center">
               <Nav.Link href="#inicio" className="nav-link-custom">Início</Nav.Link>
-              <Nav.Link href="#perfil" className="nav-link-custom">
+              <Nav.Link as={Link} onClick="/perfil" className="nav-link-custom">
                 <i className="bi bi-person-circle perfil-icone"></i>
               </Nav.Link>
             </div>

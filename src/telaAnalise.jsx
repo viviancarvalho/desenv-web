@@ -3,7 +3,7 @@ import Button from 'react-bootstrap/Button';
 import CabeçalhoFuncionario from './components/CabeçalhoFuncionario';
 import CampoInfo from './components/CampoInfo'
 
-function telaAnalise() {
+function TelaAnalise() {
     return(
         <>
          <div className="fundoPrincipal">
@@ -27,7 +27,7 @@ function telaAnalise() {
                         ></CampoInfo>
 
                         <div className="botoesContainer">
-                            <Button href="reprovado" classname="botaoRecusar">Recusar</Button>
+                            <Button href="reprovado" className="botaoRecusar">Recusar</Button>
                             <Button href="historico" className="botaoAprovar">Aprovar</Button>
                         </div>
 
@@ -40,4 +40,4 @@ function telaAnalise() {
     );
 }
 
-export default telaAnalise;
+export default TelaAnalise;

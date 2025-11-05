@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
 
-function CabeçalhoFuncionario() {
+function CabecalhoFuncionario() {
   return (
     <>
         <Navbar bg="transparent" expand={false} className="box-shadow-none">
@@ -30,4 +30,4 @@ function CabeçalhoFuncionario() {
   );
 }
 
-export default CabeçalhoFuncionario;
+export default CabecalhoFuncionario;

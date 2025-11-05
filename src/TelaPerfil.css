@@ -1,9 +1,14 @@
-#root {
-  max-width: 1500px;
-  margin: 0 auto;
-  padding: 2rem;
-  background-color: #f7f7f7;
+html{
+  overflow-x: hidden;
   width: 100%;
+}
+#root {
+  margin: 0;
+  padding: 0;
+  width: 100%;        
+  min-height: 100vh;  
+  display: flex;
+  flex-direction: column;
 }
 .brand-color{
   color: #f6af03;
@@ -23,6 +28,8 @@
 
 body{
   background-color: #f7f7f7 !important;
+   overflow-x: hidden;
+   width: 100vw;
 }
 
 /* Dados Perfil */
@@ -47,7 +54,7 @@ body{
 /* Profile */
 
 .profile-container{
-  display: flex;
+  display: flex;  
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -56,6 +63,7 @@ body{
   border-radius: 18px;
   justify-content: flex-start;
   padding: 40px;
+  width: 60vw;
 }
 
 .profile-header{

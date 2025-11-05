@@ -1,13 +1,13 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./TelaPerfil.css";
-import Header from "./components/Header";
+import "./telaPerfil.css";
+import Navbar_2 from "./components/Navbar_2";
 import Profile from "./components/Profile";
 
 
 function TelaPerfil() {
 	return (
 		<>
-			<Header></Header>
+			<Navbar_2></Navbar_2>
 			<Profile></Profile>
 			
 		</>

@@ -1,15 +1,15 @@
 import { useState } from 'react';
 import './CriarConta.css';
 import Button from 'react-bootstrap/Button';
-import CabeçalhoBásico from '../src/components/CabeçalhoBásico';
+import CabecalhoBasico from './components/CabecalhoBasico';
 
-function telaCriarConta() {
+function TelaCriarConta() {
 
   return (
     <>
       <div className="fundoPrincipal">
 
-        <CabeçalhoBásico />
+        <CabecalhoBasico />
         
         <h1 className="titulo">Criar conta</h1>
         <p className="subtitulo">Ainda não tem uma conta? Crie e tenha acesso a todos os recursos</p>
@@ -75,6 +75,4 @@ function telaCriarConta() {
   )
 }
 
-
-
-export default telaCriarConta;
+export default TelaCriarConta;

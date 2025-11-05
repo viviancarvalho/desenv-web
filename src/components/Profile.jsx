@@ -1,5 +1,5 @@
 import { Button, Row, Col } from "react-bootstrap";
-import "../TelaPerfil.css";
+import "../telaPerfil.css";
 import avatar from "../assets/avatar.png";
 import DadosPerfil from "./DadosPerfil";
 
@@ -56,4 +56,4 @@ function Profile() {
 		</div>
 	);
 }
-export default Profile;
+export default Profile; 

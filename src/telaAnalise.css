@@ -23,14 +23,14 @@
 }
 
 .navbar {
-  width: 100%;
+  width: 100vw;
+  margin-top: 20px;
 }
 
 .navbar .container-fluid {
   display: flex !important;
   justify-content: space-between !important;
   align-items: center !important;
-  margin-right: 80px;
 }
 
 .logo {
@@ -66,14 +66,14 @@
   color: #f6af03;
 }
 
-.container{
+.container3{
   display:flex;
   justify-content: center;
   align-items: center;
   margin-top: 50px;
 }
 
-.formulario{
+.formulario3{
   background-color: white;
   width: 650px;
   height: 500px;
@@ -111,16 +111,16 @@
   font-weight: 600;
 }
 
-.botoesContainer{
+.botoesContainer3{
   grid-column: 1 / -1;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  margin-top: 180px;
+  margin-top: 140px;
   gap: 30px;
 }
 
-.botaoRecusar{
+.botaoRecusar3{
   background-color: #ffdfde !important;
   color: #af4d4d;
   border: 3px solid;
@@ -133,26 +133,58 @@
   margin-left: 13px;
 }
 
-.botaoRecusar:hover {
+.botaoRecusar3:hover {
   background-color: #de5853 !important;
   border: 3px solid;
   border-color: #de5853;
   color: white;
 }
 
-.botaoRecusar:focus{
+.botaoRecusar3:focus{
   border: none;
   outline: 0;
   box-shadow: none;
 }
 
-.botaoRecusar:active{
+.botaoRecusar3:active{
   background-color: #932a27 !important;
   border: none;
   color: white;
 }
 
-.botaoAprovar {
+.botaoEnviarMotivo{
+  background-color: #ffdfde !important;
+  color: #af4d4d;
+  border: 3px solid;
+  border-color: #e07c78;
+  font-weight: 600;
+  height: 7vh;
+  width: 14vw;
+  font-weight: 500;
+  padding: 10px 20px;
+  margin-left: 13px;
+}
+
+.botaoEnviarMotivo:hover {
+  background-color: #de5853 !important;
+  border: 3px solid;
+  border-color: #de5853;
+  color: white;
+}
+
+.botaoEnviarMotivo:focus{
+  border: none;
+  outline: 0;
+  box-shadow: none;
+}
+
+.botaoEnviarMotivo:active{
+  background-color: #932a27 !important;
+  border: none;
+  color: white;
+}
+
+.botaoAprovar3 {
   background-color: #a6e7d9;
   color: #2e9379;
   border: 3px solid;
@@ -163,21 +195,85 @@
   padding: 10px 40px;
 }
 
-.botaoAprovar:focus{
+.botaoAprovar3:focus{
   border: none;
   outline: 0;
   box-shadow: none;
 }
 
-.botaoAprovar:hover {
+.botaoAprovar3:hover {
   background-color: #6dba92 !important;
   border: 3px solid;
   border-color: #6dba92;
   color: white;
 }
 
-.botaoAprovar:active{
+.botaoAprovar3:active{
   background-color: #4c8165 !important;
   color: white;
   border: none;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popUpMotivo {
+  background-color: white;
+  width: 430px;
+  height: 250px;
+  border-radius: 10px;
+  margin-right: 220px;
+}
+
+.popUpMotivo h4 {
+  margin-top: 25px;
+  margin-left: 25px;
+  margin-bottom: 10px;
+}
+
+.botoesPopUp {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 45px;
+}
+
+.botaoVoltarMotivo {
+  background: transparent;
+  border: 2px solid #012e4b;
+  color:#012e4b;
+  font-weight: 500;
+  width: 130px;
+}
+
+.botaoEnviarMotivo {
+  width: 130px;
+}
+
+.inputMotivo {
+  display:flex;
+  background: transparent;
+  border-left: 0;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 2px solid #ccc;
+  width: 90%;
+  margin-left: 20px;
+  font-size: 14px;
+  padding: 6px 8px;
+  outline: none;
+  color: #012e4b;
+  height: 8vh;
+}
+
+.inputMotivo:focus {
+  border-color: #045b90;
 }

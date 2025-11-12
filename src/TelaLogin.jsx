@@ -4,6 +4,20 @@ import Button from 'react-bootstrap/Button';
 import Navbar_1 from '../src/components/Navbar_1';
 
 function TelaLogin() {
+  const [email, setEmail] = useState("");
+  const [senha, setSenha] = useState("");
+  const [erro, setErro] = useState("");
+
+    //impede o carregamento, sem ela, a pagina recarregaria
+  const handleRegister = async (e) => {
+      e.preventDefault();
+        //await -> faz a funcao esperar ate o firebase confirmar a criacao do usuario
+      try {
+          const userCredential = await createUserWithEmailAndPassword(auth, email, senha);
+      } catch (error){
+          setErro(error.message);
+        }      
+    };
 
   return (
     <>
@@ -20,13 +34,13 @@ function TelaLogin() {
           <div className="formulario2">
             <div className='campos2'>
             <div className="campo2">
-              <p className="tituloInput2">Email</p>
-              <input type="text2"></input>
+              <p className="tituloInput2" value={email} onChange={(e) => setEmail(e.target.value)} required>Email</p>
+              <input type="text2" ></input>
             </div>
 
             <div className="campo2">
               <p className="tituloInput2">Senha</p>
-              <input type="password2"></input>
+              <input type="password2" value={senha} onChange={(e) => setSenha(e.target.value)} required></input>
             </div>
             </div>
             <div className="botoes-container2">
@@ -35,8 +49,6 @@ function TelaLogin() {
             </div>
 
           </div>
-
-        
 
       </div>
 

@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import './TelaLogin.css';
+import { Link } from 'react-router-dom'
 import Button from 'react-bootstrap/Button';
-import Navbar_1 from '../src/components/Navbar_1';
+import Navbar_1 from '../../components/Navbar_1';
 
 function TelaLogin() {
 
@@ -30,8 +31,8 @@ function TelaLogin() {
             </div>
             </div>
             <div className="botoes-container2">
-              <Button className="botaoCriar2">Entrar</Button>
-              <Button href="login" className="botaoEntrar2">Já tem uma conta? Clique aqui</Button>
+              <Link to={''}><Button className="botaoCriar2">Entrar</Button></Link>
+              <Link to={'/criarconta'}><Button href="login" className="botaoEntrar2">Não tem conta? Criar</Button></Link>
             </div>
 
           </div>

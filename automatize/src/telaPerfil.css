@@ -64,6 +64,7 @@ body{
   justify-content: flex-start;
   padding: 40px;
   width: 60vw;
+  box-shadow:0px 0px 8px rgba(0, 0, 0, 0.1);
 }
 
 .profile-header{
@@ -134,10 +135,13 @@ body{
   margin-top: 25px;
   margin-bottom: 10px;
   padding: 8px 50px ;
-  border: #011C2A ;
+  border: #0f1729 ;
   border-radius: 9px;
-  background-color: #011C2A ;
+  background-color: #0f1729 ;
+  transition: all 0.3s ease;
 }
 .profile-button:hover{
-  background-color: #034366 ;
+  background-color: #0f1729 ;
+  box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.1);
+  transition: scale(1.05);
 }

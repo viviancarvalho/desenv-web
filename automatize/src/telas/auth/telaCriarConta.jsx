@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import './CriarConta.css';
+import { Link } from 'react-router-dom'
 import Button from 'react-bootstrap/Button';
-import CabecalhoBasico from '../src/components/CabecalhoBasico';
+import Navbar_1 from '../../components/Navbar_1';
 
 function telaCriarConta() {
 
@@ -9,13 +10,13 @@ function telaCriarConta() {
     <>
       <div className="fundoPrincipal">
 
-        <CabecalhoBasico />
+        <Navbar_1 />
         
-        <h1 className="titulo">Criar conta</h1>
+        <h1 className="titulo3">Criar conta</h1>
         <p className="subtitulo">Ainda não tem uma conta? Crie e tenha acesso a todos os recursos</p>
 
-        <div className="container">
-          <div className="formulario">
+        <div className="container3">
+          <div className="formulario3">
 
             <div className="campo">
               <p className="tituloInput">Nome</p>
@@ -58,13 +59,13 @@ function telaCriarConta() {
             </div>
 
             <div className="botoes-container">
-              <Button href="login" className="botaoEntrar">Já tem uma conta? Clique aqui</Button>
-              <Button className="botaoCriar">Criar conta</Button>
+              <Link to={'/login'}><Button href="login" className="botaoEntrar">Já tem uma conta? Clique aqui</Button></Link>
+              <Link to={''}><Button className="botaoCriar">Criar conta</Button></Link>
             </div>
 
           </div>
 
-        <div className="detalhe">
+        <div className="detalhe3">
         </div>
 
       </div>

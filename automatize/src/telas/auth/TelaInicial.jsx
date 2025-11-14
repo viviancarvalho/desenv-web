@@ -1,8 +1,8 @@
-import imagem1 from './assets/imagem1.jpg';
-import LogoSVG from './assets/image2vector.svg';
+import imagem1 from '../../assets/imagem7.png';
+import img1 from '../../assets/imagem5.2.png';
 import Button from 'react-bootstrap/Button';
 import './TelaInicial.css';
-import Navbar_1 from './components/Navbar_1.jsx';
+import Navbar_1 from '../../components/Navbar_1.jsx';
 import {Link} from 'react-router-dom'
 
 function TelaInicial() {
@@ -11,7 +11,7 @@ function TelaInicial() {
       <Navbar_1></Navbar_1>
       <div className='grid'>
         <div className='grid-1'>
-          <img src={LogoSVG} alt="Logo" className="img1" />
+          <img src={img1} alt="Logo" className="img1" />
           <p>Facilite o envio e validação de documentos <br />acadêmicos com segurança e agilidade</p>
           <div>
             <Link to="/criarconta">

@@ -1,5 +1,5 @@
 
-import "../telaPerfil.css";
+import "../styles/telaPerfil.css";
 
 function DadosPerfil({titulo, conteudo}){
     return (

@@ -4,16 +4,18 @@ import cors from "cors";
 import {fileURLToPath } from "url";
 import { dirname } from "path";//extrair o diretorio
 import { readFileSync } from "fs";// leitura do arquivo
-
-//extrai o diretorio
-const __dirname = dirname(fileURLToPath(import.meta.url))
-
-var serviceAccount = JSON.parse(readFileSync(`${__dirname}/projeto-web-24623-firebase-adminsdk-fbsvc-be96c15c43.json`))
-
+ 
+console.log("BACKEND REALMENTE INICIADO");
+const serviceAccount = JSON.parse(
+	readFileSync(
+		"./projeto-automatize-firebase-adminsdk-fbsvc-8e4e175279.json",
+		"utf8"
+	)
+);
 admin.initializeApp({
-  credential: admin.credential.cert(serviceAccount)
+	credential: admin.credential.cert(serviceAccount),
 });
-
+const auth = admin.auth();
 const db = admin.firestore();// criando instanci
 const app = express();//aplicacao express
 app.use(cors());//habilita o cors
@@ -103,9 +105,53 @@ app.get("/buscar", async(req,res) => {
     res.status(500).json({error: "Erro ao buscar"})
   }
 })
+// Parte nova ---------------------------------
 
+//Cadastrar usuario
+app.post("/cadastrarUsuario", async(req, res) =>{
+  try{
+    const {
+			nome,
+			sobrenome,
+			email,
+			matricula,
+			telefone,
+			cpf,
+			senha,
+			confirmar_senha,
+		} = req.body;
 
+    if (!nome || !email || !senha) {
+      return res.status(400).json({ message: "Preencha todos os campos obrigatórios!" });
+    }
 
+    if (senha !== confirmar_senha) {
+      return res.status(400).json({ message: "As senhas não coincidem!" });
+    }
+    const user = await auth.createUser({
+      email,
+      password: senha,
+      displayName: `${nome} ${sobrenome}`
+    });
+
+    const userId = user.uid;
+
+    await db.collection("usuario").doc(userId).set({
+      nome,
+      sobrenome,
+      email,
+      matricula,
+      telefone,
+      cpf,
+      criadoEm: new Date()
+    })
+    return res.status(201).json({ message: "Usuário criado com sucesso!" });
+
+  } catch (error) {
+    console.error("Erro ao cadastrar:", error);
+    return res.status(500).json({ message: "Erro ao criar usuário.", error: error.message });
+  }
+})
 
 
 const PORT = 3000;

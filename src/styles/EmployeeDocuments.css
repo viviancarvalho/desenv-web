@@ -1,0 +1,210 @@
+/* =========================================================
+   BASE E LAYOUT GLOBAL
+   ========================================================= */
+#root {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #f7f7f7;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  background-color: #f7f7f7;
+}
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+.header-bar {
+  width: 100%;
+}
+
+.logo-text {
+  font-weight: bold;
+}
+
+.brand-color {
+  color: #f6af03;
+}
+
+.nav-links {
+  display: flex;
+  gap: 24px;
+  font-weight: 600;
+}
+
+.navbar .nav-link:hover {
+  background-color: #e7e7e731;
+  border-radius: 10px;
+  color: #f6af03;
+}
+
+/* =========================================================
+   PERFIL DO FUNCIONÁRIO
+   ========================================================= */
+.profile-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  margin: 2vh auto;
+  border-radius: 18px;
+  padding: 2vw;
+  width: 100%;
+  max-width: 1300px;
+  box-sizing: border-box;
+}
+
+.profile-header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.profile-avatar {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 10px;
+}
+
+.profile-info h5 {
+  margin: 0;
+  font-weight: 600;
+}
+
+.profile-info p {
+  margin: 0;
+  color: #7a7a7a;
+  font-size: 0.95rem;
+}
+
+/* =========================================================
+   TABELA DE DOCUMENTOS — IGUAL AO ANTIGO
+   ========================================================= */
+.document-table {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.document-table-header {
+  margin-top: 20px;
+  color: #959595;
+  border-bottom: 2px solid #d3d3d3;
+  padding: 0px 10px;
+}
+
+.document-table-row {
+  width: 100%;
+  margin-top: 20px;
+  border-bottom: 1px solid #eeeeee;
+  padding: 0px 10px;
+}
+
+/* scrollbar igual ao original */
+.document-table-scroll {
+  flex-grow: 1;
+  max-height: 46vh;
+  overflow-y: auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding-right: 10px;
+  scrollbar-width: thin;
+}
+
+/* =========================================================
+   STATUS BUTTON (MANTÉM O MESMO) trocar no back
+   ========================================================= */
+.status-button-Aprovado {
+  background-color: #a6e7d8;
+  border: 2px solid #00b087;
+  border-radius: 5px;
+  font-size: smaller;
+  color: #008767;
+  width: 140px;
+  height: 30px;
+  line-height: 10px;
+}
+.status-button-Aguardando {
+  background-color: #fad375;
+  border: 2px solid #ae7b00;
+  border-radius: 5px;
+  font-size: smaller;
+  color: #ae7b00;
+  width: 140px;
+  height: 30px;
+  line-height: 10px;
+}
+.status-button-Recusado {
+  background-color: #ffc5c5;
+  border: 2px solid #df0404;
+  border-radius: 5px;
+  font-size: smaller;
+  color: #df0404;
+  width: 140px;
+  height: 30px;
+  line-height: 10px;
+}
+
+/* =========================================================
+   UTILITÁRIOS E OUTROS
+   ========================================================= */
+.text-faded {
+  color: rgb(148, 147, 147);
+}
+
+.action-button {
+  margin-top: 25px;
+  margin-bottom: 10px;
+  padding: 8px 50px;
+  border-radius: 9px;
+  background-color: #011c2a;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+}
+
+.action-button:hover {
+  background-color: #034366;
+}
+
+/* =========================================================
+   SCROLLBAR CUSTOMIZADA
+   ========================================================= */
+.document-table-scroll::-webkit-scrollbar {
+  width: 10px;
+}
+
+.document-table-scroll::-webkit-scrollbar-track {
+  background-color: white;
+  border-radius: 10px;
+}
+
+.document-table-scroll::-webkit-scrollbar-thumb {
+  background-color: #d3d3d3;
+  border-radius: 10px;
+  border: 2px solid white;
+}
+
+.document-table-scroll::-webkit-scrollbar-thumb:hover {
+  background-color: #7a7a7a;
+}
+
+/* Firefox */
+.document-table-scroll {
+  scrollbar-color: #d3d3d3 white;
+  scrollbar-width: thin;
+}

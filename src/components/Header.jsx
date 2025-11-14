@@ -1,5 +1,5 @@
 import { Navbar, Nav, Container } from "react-bootstrap";
-import "../telaPerfil.css";
+import "../styles/telaPerfil.css";
 import {Link} from 'react-router-dom'
 
 function Header() {

@@ -8,13 +8,14 @@
 }
 
 /* criar conta */
-.titulo{
+.titulo3{
   display: block;
   color:#f6af03;
   font-weight: 700;
   font-size: 36px;
   text-align: center;
   margin-bottom: 3px;
+  margin-top: 15px;
 }
 
 /*Ainda não tem uma conta? Crie e tenha acesso a todos os recursos*/
@@ -29,16 +30,17 @@
 
 
 
-.container{
+.container3{
   display:flex;
   justify-content: center;
   align-items: center;
+  margin-top: 5rem;
 }
 
-.formulario{
+.formulario3{
   background-color: white;
   width: 650px;
-  height: 420px;
+  height: 600px;
   border-radius: 10px 0px 0px 10px;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -47,9 +49,9 @@
 }
 
 /* quadrado azul*/
-.detalhe{
+.detalhe3{
   width: 400px;
-  height: 480px;
+  height: 600px;
   background: linear-gradient(135deg, #011b2b 48%, #045b90 100%);
   background-attachment: fixed;
   border-radius: 0px 10px 10px 0px;
@@ -148,16 +150,19 @@ input:focus{
 
 .botaoEntrar {
   background-color: transparent;
-  color: #012e4b;
+  color: #0f1729;
   font-weight: 500;
   padding: 10px 20px;
   margin-left: 13px;
   border: none;
+  transition: all 0.3s ease;
 }
 
 .botaoEntrar:hover {
-  background-color: rgba(1, 43, 75, 0.1);
-  color: #012e4b;
+  background-color: transparent;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
+  transition: scale(1.05);
+  color: #0f1729;
 }
 
 .botaoEntrar:focus{
@@ -166,15 +171,16 @@ input:focus{
 }
 
 .botaoCriar {
-  background-color: #012e4b;
+  background-color: #0f1729;
   border: none;
   font-weight: 500;
   padding: 10px 40px;
   margin-right: 90px;
+  transition: all 0.3s ease;
 }
 
 .botaoCriar:hover {
-  outline: 0;
-  box-shadow: none;
-  background-color: #011b2b;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
+  transition: scale(1.05);
+  background-color: #0f1729;
 }

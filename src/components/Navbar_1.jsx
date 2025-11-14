@@ -7,10 +7,10 @@ function Navbar_1(){
     return(
         <Navbar style={{width:'100vw', alignItems:"center", justifyContent:"center"}} >
         <Container className='justify-content-between' style={{margin: "1rem"}}>
-          <Navbar.Brand style={{marginTop:'0.87vh'}} className='Titulo' href="#home">Auto<span>matize</span></Navbar.Brand>
+          <Navbar.Brand style={{marginTop:'0.87vh'}} className='Titulo' >Auto<span>matize</span></Navbar.Brand>
           <Nav>
               <Link to={'/'} style={{fontSize: '1.1rem', marginRight:'3vw', marginTop:'1.3vh', color:'#747474'}}>Início</Link>         
-              <Link to={'/perfil'} style={{justifyContent:"start"}}><i className="bi bi-person-circle" style={{ fontSize: '2rem', color: '#747474'}}></i></Link>
+              <Link to={'/telaPerfil'} style={{justifyContent:"start"}}><i className="bi bi-person-circle" style={{ fontSize: '2rem', color: '#747474'}}></i></Link>
           </Nav>
         </Container>
       </Navbar>

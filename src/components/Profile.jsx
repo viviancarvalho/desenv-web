@@ -1,9 +1,19 @@
 import { Button, Row, Col } from "react-bootstrap";
-import "../telaPerfil.css";
+import "../styles/telaPerfil.css";
 import avatar from "../assets/avatar.png";
 import DadosPerfil from "./DadosPerfil";
+import { logout } from "../services/logout";
+import { useNavigate } from "react-router-dom";
+
 
 function Profile() {
+	const navigate = useNavigate();
+
+	async function handleLogout() {
+		await logout();
+		navigate("/login"); 
+	}
+
 	return (
 		<div className="profile-container">
 			<div className="profile-header">
@@ -24,7 +34,7 @@ function Profile() {
 							titulo={"CPF: "}
 							conteudo={"987.654.323-03"}
 						></DadosPerfil>
-						<DadosPerfil titulo={"Cargo: "} conteudo={"Aluno"}></DadosPerfil>
+						{/* <DadosPerfil titulo={"Cargo: "} conteudo={"Aluno"}></DadosPerfil> */}
 					</Col>
 					<Col>
 						<DadosPerfil
@@ -35,23 +45,26 @@ function Profile() {
 							titulo={"Celular: "}
 							conteudo={"(85)98765-4321"}
 						></DadosPerfil>
-						<DadosPerfil
+						{/* <DadosPerfil
 							titulo={"Senha: "}
 							conteudo={"@Teste123#"}
-						></DadosPerfil>
+						></DadosPerfil> */}
 					</Col>
 				</Row>
 			</div>
 			<div className="estagio-container">
-				<h5>Meus estágios</h5>
+				{/* <h5>Meus estágios</h5>
 				<div className="estagio">
 					<img src={avatar} alt="imagemPerfil" className="fotoEstagio" />
 					<div className="dados-estagio">
 						<p className="text-strong">Facebook Meta</p>
 						<p className="text-faded">agora</p>
 					</div>
-				</div>
+				</div> */}
 				<Button className="profile-button">Ver processos ativos</Button>
+				<Button onClick={handleLogout} className="profile-button">
+					Sair da sua conta
+				</Button>
 			</div>
 		</div>
 	);

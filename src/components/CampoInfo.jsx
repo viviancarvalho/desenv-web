@@ -1,4 +1,4 @@
-import "../telaAnalise.css"
+import "../styles/telaAnalise.css"
 
 function CampoInfo({titulo, conteudo}) {
     return (

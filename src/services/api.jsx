@@ -1,5 +1,5 @@
 import axios from "axios";
-const api = axios.create({//cria uma instancia do axios chamada api
+const Api = axios.create({//cria uma instancia do axios chamada Api
     baseURL: "http://localhost:3000"
 });
-export default api;
+export default Api;

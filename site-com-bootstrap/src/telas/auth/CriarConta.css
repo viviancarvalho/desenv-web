@@ -1,0 +1,186 @@
+#root {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #f7f7f7;
+  width: 200vw;
+  height: 90vh;
+}
+
+/* criar conta */
+.titulo3{
+  display: block;
+  color:#f6af03;
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 3px;
+  margin-top: 15px;
+}
+
+/*Ainda não tem uma conta? Crie e tenha acesso a todos os recursos*/
+.subtitulo{
+  display: block;
+  text-align: center;
+  color: #747474;
+  font-weight: 500;
+  margin-bottom: 40px;
+  font-size: 15px;
+}
+
+
+
+.container3{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.formulario3{
+  background-color: white;
+  width: 650px;
+  height: 600px;
+  border-radius: 10px 0px 0px 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 30px;
+}
+
+/* quadrado azul*/
+.detalhe3{
+  width: 400px;
+  height: 600px;
+  background: linear-gradient(135deg, #011b2b 48%, #045b90 100%);
+  background-attachment: fixed;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.tituloInput{
+  color: #989898;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+input{
+  background-color: #f7f7f7;
+  border-left: 0;
+  border-top: 0;
+  border-right: 0;
+  border-color: #c2c2c2;
+  width: 280px;
+  color: #012e4b;
+}
+
+input:focus{
+  background-color: #f7f7f7;
+  outline:none;
+}
+
+/*cabeçalho (automatize, incio, perfil)*/
+#auto{
+  color: #f6af03;
+  font-weight: 750;
+  font-size: 22px;
+  text-align: left;
+  margin-left: 80px
+}
+
+#matize{
+  color: black;
+  font-weight: 750;
+  font-size: 22px;
+  text-align: left;
+}
+
+.navbar {
+  width: 100%;
+}
+
+.navbar .container-fluid {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  margin-right: 80px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.menu-direito {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-link-custom {
+  color: #747474 !important;
+  font-weight: 500;
+  font-size: 15px;
+  text-decoration: none;
+  gap: 30x;
+}
+
+.nav-link-custom:hover {
+  color: #f6af03 !important;
+}
+
+.perfil-icone {
+  color: #747474;
+  font-size: 1.5rem;
+  vertical-align: middle;
+}
+
+.perfil-icone:hover {
+  color: #f6af03;
+}
+
+/*customização botoes entrar e criar*/
+
+.botoes-container {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.botaoEntrar {
+  background-color: transparent;
+  color: #0f1729;
+  font-weight: 500;
+  padding: 10px 20px;
+  margin-left: 13px;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.botaoEntrar:hover {
+  background-color: transparent;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
+  transition: scale(1.05);
+  color: #0f1729;
+}
+
+.botaoEntrar:focus{
+  outline: 0;
+  box-shadow: none;
+}
+
+.botaoCriar {
+  background-color: #0f1729;
+  border: none;
+  font-weight: 500;
+  padding: 10px 40px;
+  margin-right: 90px;
+  transition: all 0.3s ease;
+}
+
+.botaoCriar:hover {
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
+  transition: scale(1.05);
+  background-color: #0f1729;
+}
